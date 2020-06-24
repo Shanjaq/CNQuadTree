@@ -1,0 +1,19 @@
+﻿<Window x:Class="CNQuadTree.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CNQuadTree"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="890.296" Width="1058.71" Loaded="OnWindowLoaded">
+    <Grid>
+        <Grid VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Width="Auto" Height="Auto">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition Height="26"/>
+            </Grid.RowDefinitions>
+            <Canvas Grid.Row="0" x:Name="cnv_main" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Width="Auto" Height="Auto" MouseMove="cnv_main_MouseMove" Background="Transparent"/>
+            <ToolBarTray Grid.Row="1" VerticalAlignment="Bottom" HorizontalAlignment="Stretch" Height="26" Width="Auto"/>
+        </Grid>
+    </Grid>
+</Window>
